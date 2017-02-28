@@ -26,11 +26,6 @@ body.landing {
     z-index: 1;
 }
 
-.navbar-link:hover {
-    color: rgb(233,50,117);
-    background-color: white;
-}
-
 .navbar .logo{
     position: relative;
     left: 2rem;
@@ -65,6 +60,11 @@ body.landing {
 
 .links-container .navbar-link:hover {
     color: rgb(233,50,117);
+}
+
+.links-container .navbar-link:active {
+    color: rgb(233,50,117);
+    background-color: white;
 }
 
 .hero-content {
