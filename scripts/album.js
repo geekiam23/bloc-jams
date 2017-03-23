@@ -179,10 +179,16 @@ var setupSeekBars = function() {
                 setVolume(seekBarFillRatio);
             }
             
+            $(document).bind('mouseup.thumb', function() {
+                $(document).unbind('mousemove.thumb');
+                $(document).unbind('mouseup.thumb');
+                
             updateSeekPercentage($seekBar, seekBarFillRatio);
+            })
         });
     });
 };
+    
 var trackIndex = function(album, song) {
     return album.songs.indexOf(song);
 };
